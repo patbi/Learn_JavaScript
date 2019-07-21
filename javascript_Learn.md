@@ -1,6 +1,6 @@
 # JavaScript Learn
 
-# Mentor Patrick BIYAGA Course 
+## Mentor Patrick BIYAGA Course 
 
 > Resume JavaScript W3Schools for the Program | ALC - Facilitator on on the Google mobile web specialist track 2019 for learners.
 
@@ -35,5 +35,24 @@ Website For Learn - https://www.w3schools.com/js/js_intro.asp
 
 Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
 ```
+
+## JavaScript Can Change HTML Content
+
+One of many JavaScript HTML methods is getElementById().
+
+This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>What Can JavaScript Do?</h2>
+  <p id="demo">JavaScript can change HTML content.</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!
+  </button>
+</body>
+</html>
+```
+
 
 
