@@ -147,7 +147,7 @@ Showing hidden HTML elements can also be done by changing the display style:
 
 
 ## JavaScript Where To
-* JavaScript in <head> or <body>.
+* JavaScript in head or body.
 
 You can place any number of scripts in an HTML document.
 Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
@@ -159,7 +159,7 @@ Scripts can also be placed in external files
 
 
 
-## JavaScript in <head>
+## JavaScript in head
 
 In this example, a JavaScript function is placed in the <head> section of an HTML page.
 
@@ -179,7 +179,7 @@ The function is invoked (called) when a button is clicked:
 <body>
 
 <h1>A Web Page</h1>
-  <p id="demo">A Paragraph</p>
+<p id="demo">A Paragraph</p>
 <button type="button" onclick="myFunction()">
     Try it
 </button>
@@ -189,7 +189,7 @@ The function is invoked (called) when a button is clicked:
 ```
 
 
-## JavaScript in <body>
+## JavaScript in body
 
 In this example, a JavaScript function is placed in the <body> section of an HTML page.
 
