@@ -12,22 +12,19 @@ With our "Try it Yourself" editor, you can change all examples and view the resu
 
 ```bash
 # My First JavaScript
+
 <html>
 <body>
-
-<h2>My First JavaScript</h2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
-
+  <h2>My First JavaScript</h2>
+  <button type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()">
+      Click me to display Date and Time.
+  </button>
+  <p id="demo"></p>
 </body>
 </html> 
 
 # Why Study JavaScript?
-JavaScript is one of the 3 languages all web developers must learn:
 
 * HTML to define the content of web pages.
 * CSS to specify the layout of web pages.
