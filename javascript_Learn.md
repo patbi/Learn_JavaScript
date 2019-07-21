@@ -1,6 +1,6 @@
 # JavaScript Learn
 
-#Mentor Patrick BIYAGA Course 
+# Mentor Patrick BIYAGA Course 
 
 > Resume JavaScript W3Schools for the Program | ALC - Facilitator on on the Google mobile web specialist track 2019 for learners.
 
