@@ -144,3 +144,115 @@ Showing hidden HTML elements can also be done by changing the display style:
 </body>
 </html>  
 ```
+
+
+## JavaScript Where To
+* JavaScript in <head> or <body>.
+
+You can place any number of scripts in an HTML document.
+Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+
+
+* External JavaScript.
+
+Scripts can also be placed in external files
+
+
+
+## JavaScript in <head>
+
+In this example, a JavaScript function is placed in the <head> section of an HTML page.
+
+The function is invoked (called) when a button is clicked:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  const myFunction = _=> {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }
+</script>
+</head>
+<body>
+
+<h1>A Web Page</h1>
+  <p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">
+    Try it
+</button>
+
+</body>
+</html> 
+```
+
+
+## JavaScript in <body>
+
+In this example, a JavaScript function is placed in the <body> section of an HTML page.
+
+The function is invoked (called) when a button is clicked:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>A Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+const myFunction = _=> {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }
+</script>
+
+</body>
+</html>
+```
+
+
+## External JavaScript
+
+Scripts can also be placed in external files:
+
+
+```bash
+External JavaScript in myScript.js
+<script>
+const myFunction = _=> {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }
+</script>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>External JavaScript</h2>
+
+  <p id="demo">A Paragraph.</p>
+
+  <button type="button" onclick="myFunction()">Try it</button>
+
+  <p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+</body>
+</html>
+```
+
+
+# External JavaScript Advantages
+
+* It separates HTML and code.
+* It makes HTML and JavaScript easier to read and maintain.
+* Cached JavaScript files can speed up page loads.
+
+
