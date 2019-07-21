@@ -7,8 +7,7 @@
 * JavaScript is easy to learn.
 * This tutorial will teach you JavaScript from basic to advanced.
 
->Examples in Each Chapter
-With our "Try it Yourself" editor, you can change all examples and view the results.
+>We will learn while having fun
 
 ```bash
 # My First JavaScript
