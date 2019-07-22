@@ -256,3 +256,206 @@ const myFunction = _=> {
 * Cached JavaScript files can speed up page loads.
 
 
+
+## JavaScript Output | JavaScript Display Possibilities
+
+JavaScript can "display" data in different ways:
+
+* Writing into an HTML element, using innerHTML.
+* Writing into the HTML output using document.write().
+* Writing into an alert box, using window.alert().
+* Writing into the browser console, using console.log().
+
+
+## Using innerHTML
+
+To access an HTML element, JavaScript can use the document.getElementById(id) method.
+
+The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>My First Web Page</h1>
+  <p>My First Paragraph</p>
+
+  <p id="demo"></p>
+
+<script>
+  document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html>
+```
+
+## Using document.write()
+
+For testing purposes, it is convenient to use document.write():
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>My First Web Page</h1>
+  <p>My first paragraph.</p>
+
+<script>
+  document.write(5 + 6);
+</script>
+
+</body>
+</html>
+```
+
+
+## Using window.alert()
+
+You can use an alert box to display data:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>My First Web Page</h1>
+  <p>My first paragraph.</p>
+
+<script>
+  window.alert(5 + 6);
+</script>
+
+</body>
+</html>
+```
+
+
+## Using console.log()
+
+For debugging purposes, you can use the console.log() method to display data.
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  console.log(5 + 6);
+</script>
+
+</body>
+</html>
+```
+
+
+## JavaScript Statements
+
+JavaScript statements are composed of:
+
+Values, Operators, Expressions, Keywords, and Comments.
+
+This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+
+
+```bash
+<script>
+  document.getElementById("demo").innerHTML = "Hello Dolly.";
+</script>
+```
+
+
+* Semicolons ;
+
+```bash
+var a, b, c;     // Declare 3 variables
+a = 5;           // Assign the value 5 to a
+b = 6;           // Assign the value 6 to b
+c = a + b;       // Assign the sum of a and b to c
+```
+
+When separated by semicolons, multiple statements on one line are allowed:
+
+
+```bash
+a = 5; b = 6; c = a + b;
+```
+
+* JavaScript White Space
+
+JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+
+The following lines are equivalent:
+
+
+```bash
+var person = "Hege";
+var person="Hege";
+```
+
+A good practice is to put spaces around operators ( = + - * / ):
+
+
+```bash
+var x = y + z;
+```
+
+
+
+* JavaScript Line Length and Line Breaks
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+
+
+```bash
+<script>
+  document.getElementById("demo").innerHTML =
+  "Hello Dolly!";
+</script>
+```
+
+
+* JavaScript Code Blocks
+
+JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+
+The purpose of code blocks is to define statements to be executed together.
+
+One place you will find statements grouped together in blocks, is in JavaScript functions:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+
+</body>
+</html>
+```
+
+
