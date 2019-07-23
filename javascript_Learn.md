@@ -939,7 +939,7 @@ EXAMPLE
 <script>
   //document.getElementById("myH").innerHTML = "My First Page";
   document.getElementById("myP").innerHTML = "My first paragraph.";
-  </script>
+</script>
 
   <p>The line starting with // is not executed.</p>
 
@@ -960,6 +960,7 @@ This example uses a comment block to prevent execution of multiple lines:
   <h1 id="myH"></h1>
 
   <p id="myP"></p>
+
 
 <script>
   /*
