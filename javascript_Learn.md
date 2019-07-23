@@ -375,7 +375,7 @@ This statement tells the browser to write "Hello Dolly." inside an HTML element 
 * Semicolons ;
 
 ```bash
-var a, b, c;     // Declare 3 variables
+let a, b, c;     // Declare 3 variables
 a = 5;           // Assign the value 5 to a
 b = 6;           // Assign the value 6 to b
 c = a + b;       // Assign the sum of a and b to c
@@ -396,15 +396,15 @@ The following lines are equivalent:
 
 
 ```bash
-var person = "Hege";
-var person="Hege";
+const person = "Hege";
+const person="Hege";
 ```
 
 A good practice is to put spaces around operators ( = + - * / ):
 
 
 ```bash
-var x = y + z;
+const x = y + z;
 ```
 
 
@@ -448,7 +448,7 @@ One place you will find statements grouped together in blocks, is in JavaScript 
 <p id="demo2"></p>
 
 <script>
-function myFunction() {
+const myFunction = _=> {
   document.getElementById("demo1").innerHTML = "Hello Dolly!";
   document.getElementById("demo2").innerHTML = "How are you?";
 }
@@ -458,4 +458,526 @@ function myFunction() {
 </html>
 ```
 
+
+## JavaScript Syntax
+
+JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+
+```bash
+let x, y, z;          // How to declare variables
+x = 5; y = 6;      // How to assign values
+z = x + y;         // How to compute values
+```
+
+* JavaScript Values
+
+The JavaScript syntax defines two types of values: Fixed values and variable values.
+
+Fixed values are called literals. Variable values are called variables.
+
+
+* JavaScript Literals
+
+
+The most important rules for writing fixed values are:
+
+Numbers are written with or without decimals:The most important rules for writing fixed values are:
+
+Numbers are written with or without decimals:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>JavaScript Numbers</h2>
+
+  <p>Number can be written with or without decimals.</p>
+
+  <p id="demo"></p>
+<script>
+  document.getElementById("demo").innerHTML = 19.50;
+</script>
+
+</body>
+</html>
+```
+
+Strings are text, written within double or single quotes:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>JavaScript Strings</h2>
+
+  <p>Strings can be written with double or single quotes.</p>
+
+  <p id="demo"></p>
+<script>
+  document.getElementById("demo").innerHTML = 'Patrick BIYAGA';
+</script>
+
+</body>
+</html>
+```
+
+* JavaScript Variables
+
+In a programming language, variables are used to store data values.
+
+JavaScript uses the var keyword to declare variables.
+
+An equal sign is used to assign values to variables.
+
+In this example, x is defined as a variable. Then, x is assigned (given) the value 4:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 4:</p>
+
+<p id="demo"></p>
+
+<script>
+  let x;
+  x = 4;
+  document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Operators
+
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Operators</h2>
+
+<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+<p id="demo"></p>
+
+<script>
+  document.getElementById("demo").innerHTML = (5 + 6) * 10;
+</script>
+
+</body>
+</html>
+```
+
+JavaScript uses an assignment operator ( = ) to assign values to variables:
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Assigning JavaScript Values</h2>
+
+<p>In JavaScript the = operator is used to assign values to variables.</p>
+
+<p id="demo"></p>
+
+<script>
+  let x, y;
+  x = 10;
+  y = 9;
+  document.getElementById("demo").innerHTML = x + y;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Expressions
+
+An expression is a combination of values, variables, and operators, which computes to a value.
+
+The computation is called an evaluation.
+
+For example, 5 * 4 evaluates to 20:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo"></p>
+
+<script>
+  document.getElementById("demo").innerHTML = 5 * 4;
+</script>
+
+</body>
+</html>
+```
+
+Expressions can also contain variable values:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo"></p>
+
+<script>
+  let x;
+  x = 4;
+  document.getElementById("demo").innerHTML = x * 10;
+</script>
+
+</body>
+</html>
+```
+
+The values can be of various types, such as numbers and strings.
+
+For example, "Patrick" + " " + "BIYAGA", evaluates to "Patrick BIYAGA":
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="claire"></p>
+
+<script>
+  document.getElementById("claire").innerHTML = "Patrick" + " "  + "BIYAGA";
+</script>
+
+</body>
+</html>
+```
+
+* JavaScript Keywords
+
+JavaScript keywords are used to identify actions to be performed.
+
+The let keyword tells the browser to create variables:
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The var Keyword Creates Variables</h2>
+
+<p id="pat"></p>
+
+<script>
+  let x, y;
+  x = 5 + 6;
+  y = x * 10;
+  document.getElementById("pat").innerHTML = y;
+</script>
+
+</body>
+</html>
+```
+
+* JavaScript Comments  ## JavaScript Syntax
+
+Not all JavaScript statements are "executed".
+
+Code after double slashes // or between /* and */ is treated as a comment.
+
+Comments are ignored, and will not be executed:
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Comments are NOT Executed</h2>
+
+<p id="demo"></p>
+
+<script>
+  let x;
+  x = 5;
+  // x = 6; I will not be executed
+  document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+* JavaScript Identifiers
+
+Identifiers are names.
+
+In JavaScript, identifiers are used to name variables (and keywords, and functions, and labels).
+
+The rules for legal names are much the same in most programming languages.
+
+In JavaScript, the first character must be a letter, or an underscore (_), or a dollar sign ($).
+
+Subsequent characters may be letters, digits, underscores, or dollar signs.
+
+
+* JavaScript is Case Sensitive
+
+All JavaScript identifiers are case sensitive. 
+
+The variables lastName and lastname, are two different variables:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>Try change lastName to lastname.</p>
+
+<p id="demo"></p>
+
+<script>
+  let lastname, lastName;
+  lastName = "Claire";
+  lastname = "Marie";
+  document.getElementById("demo").innerHTML = lastName;
+</script>
+
+</body>
+</html>
+```
+
+JavaScript does not interpret VAR or Var as the keyword var.
+
+
+* JavaScript and Camel Case
+
+
+Historically, programmers have used different ways of joining multiple words into one variable name:
+
+- Hyphens:
+
+first-name, last-name, master-card, inter-city.
+
+
+- Underscore:
+
+first_name, last_name, master_card, inter_city.
+
+Upper Camel Case (Pascal Case):
+
+FirstName, LastName, MasterCard, InterCity.
+
+Lower Camel Case:
+
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+
+firstName, lastName, masterCard, interCity.
+
+
+## JavaScript Comments
+
+JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+JavaScript comments can also be used to prevent execution, when testing alternative code.
+
+
+* Single Line Comments
+
+Single line comments start with //.
+
+Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+
+This example uses a single-line comment before each code line:
+
+EXAMPLE :
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1 id="myH"></h1>
+  <p id="myP"></p>
+
+<script>
+  // Change heading:
+  document.getElementById("myH").innerHTML = "JavaScript Comments";
+  // Change paragraph:
+  document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+
+</body>
+</html>
+```
+
+
+This example uses a single line comment at the end of each line to explain the code:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>JavaScript Comments</h2>
+
+  <p id="demo"></p>
+
+<script>
+  let x = 5;    // Declare x, give it the value of 5
+  let y = x + 2;  // Declare y, give it the value of x + 2 
+  // Write y to demo:
+  document.getElementById("demo").innerHTML = y;
+</script>
+
+
+</body>
+</html>
+```
+
+
+* Multi-line Comments
+
+
+Multi-line comments start with /* and end with */.
+
+Any text between /* and */ will be ignored by JavaScript.
+
+This example uses a multi-line comment (a comment block) to explain the code:
+
+EXAMPLE
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1 id="myH"></h1>
+  <p id="myP"></p>
+
+<script>
+  /*
+  The code below will change
+  the heading with id = "myH"
+  and the paragraph with id = "myP"
+  */
+  document.getElementById("myH").innerHTML = "JavaScript Comments";
+  document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+
+</body>
+</html>
+```
+
+
+
+* Using Comments to Prevent Execution
+
+Using comments to prevent execution of code is suitable for code testing.
+
+Adding // in front of a code line changes the code lines from an executable line to a comment.
+
+This example uses // to prevent execution of one of the code lines:Using comments to prevent execution of code is suitable for code testing.
+
+Adding // in front of a code line changes the code lines from an executable line to a comment.
+
+This example uses // to prevent execution of one of the code lines:
+
+
+EXAMPLE
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Comments</h2>
+
+  <h1 id="myH"></h1>
+
+  <p id="myP"></p>
+
+<script>
+  //document.getElementById("myH").innerHTML = "My First Page";
+  document.getElementById("myP").innerHTML = "My first paragraph.";
+  </script>
+
+  <p>The line starting with // is not executed.</p>
+
+</body>
+</html>
+```
+
+
+This example uses a comment block to prevent execution of multiple lines:
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Comments</h2>
+
+  <h1 id="myH"></h1>
+
+  <p id="myP"></p>
+
+  <script>
+  /*
+  document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+  document.getElementById("myP").innerHTML = "This is my first paragraph.";
+  */
+  document.getElementById("myP").innerHTML = "The comment-block is not executed.";
+</script>
+
+
+</body>
+</html>
+```
+
+
+## JavaScript Variables
+
+JavaScript variables are containers for storing data values.
+
+In this example, x, y, and z, are variables:
 
