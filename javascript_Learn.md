@@ -961,7 +961,7 @@ This example uses a comment block to prevent execution of multiple lines:
 
   <p id="myP"></p>
 
-  <script>
+<script>
   /*
   document.getElementById("myH").innerHTML = "Welcome to my Homepage";
   document.getElementById("myP").innerHTML = "This is my first paragraph.";
