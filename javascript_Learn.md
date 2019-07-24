@@ -982,3 +982,483 @@ JavaScript variables are containers for storing data values.
 
 In this example, x, y, and z, are variables:
 
+Example
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>In this example, x, y, and z are variables.</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 4;
+  let y = 3;
+  let z = x + y;
+  document.getElementById("alc").innerHTML =
+  "The value of z is: " + z;
+</script>
+
+</body>
+</html>
+```
+
+From the example above, you can expect:
+
+x stores the value 4
+y stores the value 3
+z stores the value 7
+
+
+* Much Like Algebra
+
+In this example, price1, price2, and total, are variables:
+
+Example
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p id="alc"></p>
+
+<script>
+  let price1 = 4;
+  let price2 = 3;
+  let total = price1 + price2;
+  document.getElementById("alc").innerHTML =
+  "The total is: " + total;
+</script>
+
+</body>
+</html>
+```
+
+In programming, just like in algebra, we use variables (like price1) to hold values.
+
+In programming, just like in algebra, we use variables in expressions (total = price1 + price2).
+
+From the example above, you can calculate the total to be 7.
+
+
+* JavaScript Identifiers
+
+All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+
+```bash
+- Names can contain letters, digits, underscores, and dollar signs.
+- Names must begin with a letter
+- Names can also begin with $ and _ (but we will not use it in this tutorial)
+- Names are case sensitive (y and Y are different variables)
+- Reserved words (like JavaScript keywords) cannot be used as names
+
+JavaScript identifiers are case-sensitive.
+```
+
+* The Assignment Operator
+
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+This is different from algebra. The following does not make sense in algebra:
+
+```bash
+  x = x + 4
+```
+
+
+In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.
+
+(It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 4.)
+
+
+```bash
+  The "equal to" operator is written like == in JavaScript.
+```
+
+* JavaScript Data Types
+
+
+JavaScript variables can hold numbers like 100 and text values like "John Doe".
+
+In programming, text values are called text strings.
+
+JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+Strings are written inside double or single quotes. Numbers are written without quotes.
+
+If you put a number in quotes, it will be treated as a text string.
+
+
+Example
+
+
+```bash
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+
+<p id="alc"></p>
+
+<script>
+  let pi = 3.14;
+  let person = "Marie Claire";
+  let answer = 'Yes I am!';
+
+  document.getElementById("alc").innerHTML =
+  pi + "<br>" + person + "<br>" + answer;
+</script>
+
+</body>
+</html>
+```
+
+
+* Declaring (Creating) JavaScript Variables
+
+Creating a variable in JavaScript is called "declaring" a variable.
+
+You declare a JavaScript variable with the let keyword:
+
+
+```bash
+let carName;
+```
+
+After the declaration, the variable has no value (technically it has the value of undefined).
+
+To assign a value to the variable, use the equal sign:
+
+
+```bash
+carName = "Patrick";
+```
+
+You can also assign a value to the variable when you declare it:
+
+```bash
+let carName = "Patrick"; 
+```
+
+
+In the example below, we create a variable called carName and assign the value "Volvo" to it.
+
+Then we "output" the value inside an HTML paragraph with id="alc":
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>Create a variable, assign a value to it, and display it:</p>
+
+  <p id="alc"></p>
+
+<script>
+  const carName = "Patrick";
+  document.getElementById("alc").innerHTML = carName;
+</script>
+
+</body>
+</html> 
+```
+
+
+```bash
+It's a good programming practice to declare all variables at the beginning of a script.
+```
+
+* One Statement, Many Variables
+
+You can declare many variables in one statement.
+
+Start the statement with let and separate the variables by comma:
+
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>You can declare many variables in one statement.</p>
+
+<p id="alc"></p>
+
+<script>
+  let person = "Marie Claire", carName = "pat", price = 100;
+  document.getElementById("alc").innerHTML = carName;
+</script>
+
+</body>
+</html>
+```
+
+
+A declaration can span multiple lines:
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>You can declare many variables in one statement.</p>
+
+<p id="alc"></p>
+
+<script>
+  let person = "Marie Claire",
+  carName = "pat",
+  price = 100;
+  document.getElementById("alc").innerHTML = carName;
+</script>
+
+</body>
+</html>
+```
+
+
+ * Value = undefined
+
+
+ In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+A variable declared without a value will have the value undefined.
+
+The variable carName will have the value undefined after the execution of this statement:
+
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>A variable declared without a value will have the value undefined.</p>
+
+<p id="alc"></p>
+
+<script>
+  let carName;
+  document.getElementById("alc").innerHTML = carName;
+</script>
+
+</body>
+</html>
+```
+
+
+* Re-Declaring JavaScript Variables
+
+
+If you re-declare a JavaScript variable, it will not lose its value.
+
+The variable carName will still have the value "Patrick" after the execution of these statements:
+
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+
+<p id="alc"></p>
+
+<script>
+  let carName = "Patrick";
+  let carName;
+  document.getElementById("alc").innerHTML = carName;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Arithmetic
+
+
+As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:
+
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>The result of adding 5 + 2 + 3:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5 + 2 + 3;
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+You can also add strings, but strings will be concatenated:
+
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>The result of adding "Marie" + " " + "Claire":</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = "Marie" + " " + "Claire";
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+Also try this:
+
+Example
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>The result of adding "5" + 2 + 3:</p>
+
+  <p id="alc"></p>
+
+<script>
+  x = "5" + 2 + 3;
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+```bash
+If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+```
+
+
+Now try this:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Variables</h2>
+
+  <p>The result of adding 2 + 3 + "5":</p>
+
+  <p id="alc"></p>
+
+<script>
+  var x = 2 + 3 + "5"
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+
+## JavaScript Operators
+
+
+Assign values to variables and add them together:
+
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Operators</h2>
+
+  <p>x = 4, y = 6, calculate z = x + y, and display z:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 4;
+  let y = 6;
+  let z = x + y;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+
+The assignment operator (=) assigns a value to a variable.
+
+
+
