@@ -1428,7 +1428,7 @@ Now try this:
 
 
 
-## JavaScript Operators
+# JavaScript Operators
 
 
 Assign values to variables and add them together:
@@ -1461,7 +1461,7 @@ Assign values to variables and add them together:
 The assignment operator (=) assigns a value to a variable.
 
 
-# Assignment
+* Assignment
 
 
 EXAMPLE : 
@@ -1488,7 +1488,7 @@ EXAMPLE :
 The addition operator (+) adds numbers:
 
 
-# Adding
+* Adding
 
 EXAMPLE :
 
@@ -1516,7 +1516,7 @@ EXAMPLE :
 
 The multiplication operator (*) multiplies numbers.
 
-# Multiplying
+* Multiplying
 
 
 EXAMPLE :
@@ -1605,7 +1605,7 @@ Bitwise operators are fully described in the => https://www.w3schools.com/js/js_
 
 
 
-## JavaScript Arithmetic
+# JavaScript Arithmetic
 
 
 Arithmetic operators perform arithmetic on numbers (literals or variables).
@@ -1636,7 +1636,7 @@ EXAMPLE :
 ```
 
 
-# Operators and Operands
+* Operators and Operands
 
 
 The numbers (in an arithmetic operation) are called operands.
@@ -1882,7 +1882,7 @@ EXAMPLE :
 ```
 
 
-## JavaScript Assignment
+# JavaScript Assignment
 
 Assignment operators assign values to JavaScript variables.
 
@@ -1913,5 +1913,5 @@ The = assignment operator assigns a value to a variable.
 ```
 
 
-## JavaScript Data Types
+# JavaScript Data Types
 
