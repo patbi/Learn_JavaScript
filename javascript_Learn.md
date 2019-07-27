@@ -1915,3 +1915,524 @@ The = assignment operator assigns a value to a variable.
 
 # JavaScript Data Types
 
+
+JavaScript variables can hold many data types: numbers, strings, objects and more:
+
+
+> var length = 16;                               // Number
+var lastName = "Johnson";                      // String
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+
+* The Concept of Data Types
+
+In programming, data types is an important concept.
+
+To be able to operate on variables, it is important to know something about the type.
+
+Without data types, a computer cannot safely solve this:
+
+
+> let x = 16 + "Volvo";
+
+
+Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result? JavaScript will treat the example above as:
+
+> let x = "16" + "Volvo";
+
+
+** When adding a number and a string, JavaScript will treat the number as a string.
+
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript</h2>
+
+  <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 16 + "Volvo";
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Types are Dynamic
+
+JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+
+
+EXAMPLE : 
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Data Types</h2>
+
+  <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x;         // Now x is undefined
+  x = 5;         // Now x is a Number
+  x = "John";      // Now x is a String
+
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Strings
+
+A string (or a text string) is a series of characters like "John Doe".
+
+Strings are written with quotes. You can use single or double quotes:
+
+
+EXAMPLE: 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Strings</h2>
+
+  <p>Strings are written with quotes. You can use single or double quotes:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let carName1 = "Volvo XC60";
+  let carName2 = 'Volvo XC60';
+
+  document.getElementById("alc").innerHTML =
+  carName1 + "<br>" + 
+  carName2; 
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Numbers
+
+JavaScript has only one type of numbers.
+
+Numbers can be written with, or without decimals:
+
+
+EXAMPLE:
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Numbers</h2>
+
+  <p>Numbers can be written with, or without decimals:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x1 = 34.00;
+  let x2 = 34;
+  let x3 = 3.14;
+
+  document.getElementById("alc").innerHTML =
+  x1 + "<br>" + x2 + "<br>" + x3;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Booleans
+
+Booleans can only have two values: true or false.
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Booleans</h2>
+
+  <p>Booleans can have two values: true or false:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 5;
+  let z = 6;
+  document.getElementById("alc").innerHTML =
+  (x == y) + "<br>" + (x == z);
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Arrays
+
+
+JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.
+
+The following code declares (creates) an array called cars, containing three items (car names):
+
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+  <p id="alc"></p>
+
+<script>
+  const cars = ["Saab","Volvo","BMW"];
+
+  document.getElementById("alc").innerHTML = cars[0];
+</script>
+
+</body>
+</html>
+```
+
+
+> Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+
+
+* JavaScript Objects
+
+JavaScript objects are written with curly braces {}.
+
+Object properties are written as name:value pairs, separated by commas.
+
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="alc"></p>
+
+<script>
+  const person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age     : 50,
+    eyeColor  : "blue"
+  };
+
+  document.getElementById("alc").innerHTML =
+  person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+```
+
+
+> The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.
+
+You will learn more about objects later in this tutorial.
+
+
+* The typeof Operator
+
+You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+
+The typeof operator returns the type of a variable or an expression:
+
+```bash
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+```
+
+
+* Undefined
+
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript</h2>
+
+  <p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+  <p id="alc"></p>
+
+<script>
+  let car;
+  document.getElementById("alc").innerHTML =
+  car + "<br>" + typeof car;
+</script>
+
+</body>
+</html> 
+```
+
+
+Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+
+
+EXAMPLE : 
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+
+<p id="alc"></p>
+
+<script>
+  let car = "Volvo";
+  car = undefined;
+  document.getElementById("alc").innerHTML =
+  car + "<br>" + typeof car;
+</script>
+
+</body>
+</html>
+```
+
+
+* Empty Values
+
+An empty value has nothing to do with undefined.
+
+An empty string has both a legal value and a type.
+
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript</h2>
+
+  <p>An empty string has both a legal value and a type:</p>
+
+  <p id="alc"></p>
+
+<script>
+  let car = "";
+  document.getElementById("alc").innerHTML =
+  "The value is: " +
+  car + "<br>" +
+  "The type is: " + typeof car;
+</script>
+
+</body>
+</html>
+```
+
+
+* Null
+
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+
+Unfortunately, in JavaScript, the data type of null is an object.
+
+
+> You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+
+
+You can empty an object by setting it to null:
+
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript</h2>
+
+  <p>Objects can be emptied by setting the value to <b>null</b>.</p>
+
+  <p id="alc"></p>
+
+<script>
+  let person = {firstName:"Marie", lastName:"Claire", age:50, eyeColor:"blue"};
+  person = null;
+  document.getElementById("alc").innerHTML = typeof person;
+</script>
+
+</body>
+</html> 
+```
+
+
+* Difference Between Undefined and Null
+
+
+undefined and null are equal in value but different in type:
+
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript</h2>
+
+  <p>Undefined and null are equal in value but different in type:</p>
+
+  <p id="alc"></p>
+
+<script>
+  document.getElementById("alc").innerHTML =
+  typeof undefined + "<br>" +
+  typeof null + "<br><br>" +
+  (null === undefined) + "<br>" +
+  (null == undefined);
+</script>
+
+</body>
+</html>  
+```
+
+
+* Primitive Data
+
+
+A primitive data value is a single simple data value with no additional properties and methods.
+
+The typeof operator can return one of these primitive types:
+
+
+```bash
+- string
+- number
+- boolean
+- undefined  
+```
+
+EXAMPLE : 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript typeof</h2>
+  <p>The typeof operator returns the type of a variable or an expression.</p>
+
+  <p id="alc"></p>
+
+<script>
+  document.getElementById("alc").innerHTML = 
+  typeof "Marie" + "<br>" + 
+  typeof 3.14 + "<br>" +
+  typeof true + "<br>" +
+  typeof false + "<br>" +
+  typeof x;
+</script>
+
+</body>
+</html>  
+```
+
+
+* Complex Data
+
+
+The typeof operator can return one of two complex types:
+
+> function
+
+> object
+
+The typeof operator returns "object" for objects, arrays, and null.
+
+The typeof operator does not return "object" for functions.
+
+
+EXAMPLE :
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript typeof</h2>
+  <p>The typeof operator returns object for both objects, arrays, and null.</p>
+  <p>The typeof operator does not return object for functions.</p>
+
+  <p id="alc"></p>
+
+<script>
+  document.getElementById("alc").innerHTML = 
+  typeof {name:'Marie', age:34} + "<br>" +
+  typeof [1,2,3,4] + "<br>" +
+  typeof null + "<br>" +
+  typeof function myFunc(){};
+</script>
+
+</body>
+</html>  
+```
+
+> The typeof operator returns "object" for arrays because in JavaScript arrays are objects.
