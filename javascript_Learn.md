@@ -1107,7 +1107,7 @@ Example
 
 
 ```bash
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
@@ -1461,4 +1461,457 @@ Assign values to variables and add them together:
 The assignment operator (=) assigns a value to a variable.
 
 
+# Assignment
+
+
+EXAMPLE : 
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The = Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 10;
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+The addition operator (+) adds numbers:
+
+
+# Adding
+
+EXAMPLE :
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The + Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x + y;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+
+The multiplication operator (*) multiplies numbers.
+
+# Multiplying
+
+
+EXAMPLE :
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The * Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x * y;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+* JavaScript Arithmetic Operators
+
+Link =>  https://www.w3schools.com/js/js_arithmetic.asp
+
+
+
+* JavaScript Assignment Operators
+
+Link =>   https://www.w3schools.com/js/js_assignment.asp
+
+
+
+* JavaScript String Operators
+
+EXAMPLE : 
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Operators</h2>
+
+  <p>The + operator concatenates (adds) strings.</p>
+
+  <p id="alc"></p>
+
+<script>
+  var txt1 = "John";
+  var txt2 = "Doe";
+  document.getElementById("alc").innerHTML = txt1 + " " + txt2;
+</script>
+
+</body>
+</html>
+```
+
+
+* JavaScript Comparison Operators
+
+
+Link =>  https://www.w3schools.com/js/js_comparisons.asp
+
+
+* JavaScript Logical Operators
+
+Logical operators are fully described in the   
+  Link =>  https://www.w3schools.com/js/js_comparisons.asp
+
+
+* JavaScript Type Operators
+
+
+Type operators are fully described in the Link => https://www.w3schools.com/js/js_type_conversion.asp
+
+
+* JavaScript Bitwise Operators
+
+
+Bitwise operators are fully described in the => https://www.w3schools.com/js/js_bitwise.asp
+
+
+
+
+## JavaScript Arithmetic
+
+
+Arithmetic operators perform arithmetic on numbers (literals or variables).
+
+
+* Arithmetic Operations  
+
+A typical arithmetic operation operates on two numbers.
+
+EXAMPLE : 
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <p>A typical arithmetic operation takes two numbers and produces a new number.</p>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 100 + 50;
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+# Operators and Operands
+
+
+The numbers (in an arithmetic operation) are called operands.
+
+The operation (to be performed between the two operands) is defined by an operator.
+
+
+* Adding
+
+The addition operator (+) adds numbers.
+
+EXAMPLE :
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The + Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x + y;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+
+
+* Subtracting
+
+The subtraction operator (-) subtracts numbers.
+
+EXAMPLE :
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The - Operator</h2>
+
+<p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x - y;
+  document.getElementById("alc").innerHTML = z
+</script>
+
+</body>
+</html>
+```
+
+
+* Multiplying
+
+The multiplication operator (*) multiplies numbers.
+
+EXAMPLE :
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The * Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x * y;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+
+* Dividing
+
+The division operator (/) divides numbers.
+
+EXAMPLE :
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The / Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x / y;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+* Remainder
+
+The modulus operator (%) returns the division remainder.
+
+EXAMPLE :
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The % Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  let y = 2;
+  let z = x % y;
+document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+* Incrementing
+
+The increment operator (++) increments numbers.
+
+EXAMPLE :
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The ++ Operator</h2>
+
+<p id="alc"></p>
+
+<script>
+  let x = 5;
+  x++;
+  let z = x;
+  document.getElementById("let").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+* Decrementing
+
+The decrement operator (--) decrements numbers.
+
+EXAMPLE :
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The -- Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  x--;
+  let z = x;
+  document.getElementById("alc").innerHTML = z;
+</script>
+
+</body>
+</html>
+```
+
+* Exponentiation
+
+The exponentiation operator (**) raises the first operand to the power of the second operand.
+
+EXAMPLE :
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The ** Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 5;
+  document.getElementById("alc").innerHTML = x ** 2;
+</script>
+
+</body>
+</html>
+```
+
+* Operator Precedence
+
+Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+EXAMPLE :
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <p>Multiplication has precedence over addition.</p>
+
+  <p id="alc"></p>
+
+<script>
+  document.getElementById("alc").innerHTML = 100 + 50 * 3;
+</script>
+
+</body>
+</html>
+```
+
+
+## JavaScript Assignment
+
+Assignment operators assign values to JavaScript variables.
+
+> The **= operator is an experimental part of the ECMAScript 2016 proposal (ES7). It is not stable across browsers. Do not use it.
+
+
+Assignment Examples
+
+The = assignment operator assigns a value to a variable.
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>The = Operator</h2>
+
+  <p id="alc"></p>
+
+<script>
+  let x = 10;
+  document.getElementById("alc").innerHTML = x;
+</script>
+
+</body>
+</html>
+```
+
+
+## JavaScript Data Types
 
