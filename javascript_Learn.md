@@ -2436,3 +2436,206 @@ EXAMPLE :
 ```
 
 > The typeof operator returns "object" for arrays because in JavaScript arrays are objects.
+
+
+
+# JavaScript Functions
+
+
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+
+EXAMPLE 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+  <p id="alc"></p>
+
+<script>
+  const myFunction = (p1, p2) => { return p1 * p2;}
+  document.getElementById("demo").innerHTML = myFunction(8, 3);
+</script>
+
+</body>
+</html>  
+```
+
+
+* JavaScript Function Syntax
+
+
+A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+
+The parentheses may include parameter names separated by commas:
+(parameter1, parameter2, ...)
+
+The code to be executed, by the function, is placed inside curly brackets: {}
+
+
+// es5
+
+```bash
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+```
+
+
+// es6 
+
+```bash
+const name = (parameter1, parameter2, parameter3) => {
+  // code to be executed
+}
+```
+
+> we will come back to a more detailed course on the modern js at the end of it
+
+
+
+* Function Invocation
+
+```bash
+- When an event occurs (when a user clicks a button)
+- When it is invoked (called) from JavaScript code
+- Automatically (self invoked)
+``` 
+
+
+* Function Return
+
+
+// es5 
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>This example calls a function which performs a calculation and returns the result:</p>
+
+  <p id="alc"></p>
+
+<script>
+  var a = myFunction(4, 3);
+  document.getElementById("alc").innerHTML = a;
+
+  function myFunction(x, y) {
+    return x * y;
+  }
+</script>
+
+</body>
+</html>
+```
+
+
+// es6 
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation and returns the result:</p>
+
+<p id="alc"></p>
+
+<script>
+
+  const chainedAddition = ( a,b ) => {
+    return (a * b); 
+  }
+
+  const pat = chainedAddition(9, 4);
+  document.getElementById('alc').innerHTML = pat;
+
+</script>
+
+</body>
+</html>
+```
+
+
+* Why Functions?
+
+You can reuse code: Define the code once, and use it many times.
+
+You can use the same code many times with different arguments, to produce different results.
+
+
+EXAMPLE : 
+
+// es5
+
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+  <p id="demo"></p>
+
+<script>
+  function toCelsius(f) {
+    return (5/9) * (f-32);
+  }
+  document.getElementById("demo").innerHTML = toCelsius(77);
+</script>
+
+</body>
+</html>
+```
+
+
+// es6
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+  <p id="demo"></p>
+
+<script>
+  const toCelsius = f => {return (5/9) * (f-32);}
+
+  const pat = toCelsius(68);
+
+  document.getElementById("demo").innerHTML = pat;
+</script>
+
+</body>
+</html>
+```
+
+
+
+# JavaScript Objects
+
+Real Life Objects, Properties, and Methods
+In real life, a car is an object.
+
